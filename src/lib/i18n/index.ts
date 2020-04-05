@@ -6,13 +6,13 @@ import NameSpace from './nameSpaces';
 import importResources from './importResources';
 
 const nameSpaces = [NameSpace.COMMON];
-const resources = importResources([Language.EN, Language.RU], nameSpaces);
+const resources = importResources([Language.EN, Language.PT], nameSpaces);
 
 i18next.use(initReactI18next).init({
   resources,
   ns: nameSpaces,
   defaultNS: NameSpace.COMMON,
-  lng: Language.RU,
+  lng: Language.PT,
   fallbackLng: Language.EN,
   debug: false,
   interpolation: {
